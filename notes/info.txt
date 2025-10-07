@@ -1,0 +1,59 @@
+
+!ycYE%9j5QBeGl
+!8w5f%@QP7qOPe
+diITt&OQR39PoV0qp@7v
+$AXqCBo1M!B2sJd48hUu
+fpphf&2DKFs$7ftoLpi8
+m$*#p$bSVLKSd*P0qWin
+JS@!TH1YtO#A0CMI5r2y
+Z$#$oivrPJhHfFElNp38
+ebT#8#!7qFAPd0TXXEtu
+yNZexdj^gtUES47zqutp
+DbH5D0rW1&93G&Wmq!9&
+BYPEkdWUadQ#9w2d*7Bl
+MNdXRh!I4J3sSW8^6UfQ
+bNVX9bOOIx2h%&cLTlfo
+sCkMZj#05Y@yCJ1L1293
+fh*LeKmv4DWQ8dhhD%pn
+H&1tW^F@Iz7YBMQ#pj$u
+*tT6AZJKcoZkkUfTCr#f
+8MT!jI%t%3AquzuR9$kx
+ZAtZbUQE9WZ%Qjsn^rPc
+iiTZwCrlD$3#tem0*J@V
+7zmGXQLThv9s07@6TyZI
+^5E5b#ftxwpnG4f84OOR
+pyromaniamouthfootwearstreet6
+
+Ports
+SSH 22
+RDP 3389
+HTTP 80
+HTTPS 443
+FTP 20/21
+
+Who is logged into your system right now?
+“Users” tab of Task Manager on Windows
+What processes are running?
+Task Manager or SysInternals Process Explorer on Windows
+What network connections are being made?
+netstat -anob or SysInternals TCPView on Windows
+What tasks are scheduled?
+Task Scheduler or SysInternals AutoRuns on Windows
+
+Firewalls allow you to restrict what network connections are allowed in/out of your system
+To have a minimal attack surface, you would only allow the network traffic that is needed to keep your services up and keep access (SSH/RDP) to your systems. 
+
+Security Logs Event IDs:
+4624: Successful Logon
+4626: Failed Logon
+4720 / 4722 / 4738: A user account was created / enabled / changed. Attackers might create a backdoor account or even enable an old one to avoid detection 
+4725 / 4726: A user account was disabled/deleted. In some advanced cases, threat actors may disable privileged SOC accounts to slow down their actions
+4723 / 4724: A user changed their password /User's password was reset. Given enough permissions, threat actors might reset the password and then access the required user
+4732 / 4733: A user was added to /removed from a security group. Attackers often add their backdoor accounts to privileged groups like "Administrators"
+
+Logon Type:
+10 for RDP
+3 for Network
+
+
+
