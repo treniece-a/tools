@@ -14,3 +14,6 @@ Official Microsoft ZIP:
 3. Right-click `Start_Defense_Tools.bat` → Run as administrator → Accept EULAs.
 4. Run `Quick_Baseline.bat` → Run as administrator.
 5. Keep `procexp.exe` and `tcpview.exe` open during the match.
+
+## Bit
+https://bitwarden.com/password-generator/#password-generator
