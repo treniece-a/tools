@@ -8,13 +8,13 @@ HTTPS 443
 FTP 20/21
 
 Who is logged into your system right now?
-“Users” tab of Task Manager on Windows
+  “Users” tab of Task Manager on Windows
 What processes are running?
-Task Manager or SysInternals Process Explorer on Windows
+  Task Manager or SysInternals Process Explorer on Windows
 What network connections are being made?
-netstat -anob or SysInternals TCPView on Windows
+  netstat -anob or SysInternals TCPView on Windows
 What tasks are scheduled?
-Task Scheduler or SysInternals AutoRuns on Windows
+  Task Scheduler or SysInternals AutoRuns on Windows
 
 Firewalls allow you to restrict what network connections are allowed in/out of your system
 To have a minimal attack surface, you would only allow the network traffic that is needed to keep your services up and keep access (SSH/RDP) to your systems. 
